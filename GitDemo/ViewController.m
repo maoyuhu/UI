@@ -14,13 +14,21 @@
 @property(nonatomic,assign)NSInteger sum;
 
 @property(nonatomic,strong)TestClass *testClass;
-
+-(void)sayByeBye;
 @end
 
 @implementation ViewController
 
+
+-(void)sayByeBye{
+
+    NSLog(@"Bye---Bye");
+
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self sayByeBye];
     
     int a = 5;
     int b = 10;
