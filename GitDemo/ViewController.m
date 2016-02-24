@@ -15,13 +15,23 @@
 
 @property(nonatomic,strong)TestClass *testClass;
 
+-(void)sayHello;
+
 @end
 
 @implementation ViewController
 
+
+
+-(void)sayHello{
+
+
+    NSLog(@"Hello");
+
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self sayHello];
     int a = 5;
     int b = 10;
     self.sum = a + b;
